@@ -1,0 +1,164 @@
+{
+  "title": "#0170 — Some Apps — Wire Ctrl-Left ↔ Alt-Left and Ctrl-Right ↔ Alt-Right, Be Like Linux",
+  "rules": [
+
+    {
+      "description": "#0171 — Finder↔/Chrome↔/Teams↔/½Outlook — Remap Control+LeftArrow ↔ Alt+LeftArrow",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": { "mandatory": [ "left_control" ],
+                           "optional": [ "left_shift" ] }
+          },
+          "to": {
+            "key_code": "left_arrow",
+            "modifiers": [ "left_option" ]
+          },
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.finder",
+                "^com\\.google\\.Chrome",
+                "^com\\.microsoft\\.teams",
+                "^com\\.microsoft\\.Outlook",
+                "^com\\.tinyspeck\\.slackmacgap"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": { "mandatory": [ "left_option" ],
+                           "optional": [ "left_shift" ] }
+          },
+          "to": {
+            "key_code": "left_arrow",
+            "modifiers": [ "left_control" ]
+          },
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.finder",
+                "^com\\.google\\.Chrome",
+                "^com\\.microsoft\\.teams",
+                "^com\\.tinyspeck\\.slackmacgap"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "description": "#0172 — Finder↔/Chrome↔/Teams↔/½Outlook→ — Remap Control+RightArrow ↔ Alt+RightArrow",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": { "mandatory": [ "left_control" ],
+                           "optional": [ "left_shift" ] }
+          },
+          "to": {
+            "key_code": "right_arrow",
+            "modifiers": [ "left_option" ]
+          },
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.finder",
+                "^com\\.google\\.Chrome",
+                "^com\\.microsoft\\.teams",
+                "^com\\.microsoft\\.Outlook",
+                "^com\\.tinyspeck\\.slackmacgap"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": { "mandatory": [ "left_option" ],
+                           "optional": [ "left_shift" ] }
+          },
+          "to": {
+            "key_code": "right_arrow",
+            "modifiers": [ "left_control" ]
+          },
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.apple\\.finder",
+                "^com\\.google\\.Chrome",
+                "^com\\.microsoft\\.teams",
+                "^com\\.tinyspeck\\.slackmacgap"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "description": "#0173 — Outlook — Remap Alt+LeftArrow → Command+LeftArrow",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": { "mandatory": [ "left_option" ],
+                           "optional": [ "left_shift" ] }
+          },
+          "to": {
+            "key_code": "left_arrow",
+            "modifiers": [ "left_command" ]
+          },
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Outlook"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "#0174 — Outlook — Remap Alt+RightArrow → Command+RightArrow",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": { "mandatory": [ "left_option" ],
+                           "optional": [ "left_shift" ] }
+          },
+          "to": {
+            "key_code": "right_arrow",
+            "modifiers": [ "left_command" ]
+          },
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.microsoft\\.Outlook"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+
+  ]
+}
+

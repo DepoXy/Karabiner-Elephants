@@ -1,0 +1,31 @@
+{
+  "title": "#0530 — Postman (com.postmanlabs.mac) — Foregrounder",
+  "rules": [
+
+    {
+      "description": "#0531 — Postman — Systemwide — Foreground (Shift-Ctrl-Cmd-P)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "p",
+            "modifiers": {
+              "mandatory": [
+                "left_shift",
+                "left_control",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"Postman\" to reopen' -e 'tell application \"Postman\" to activate'"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+
+  ]
+}
+

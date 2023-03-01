@@ -1,0 +1,55 @@
+{
+  "title": "#0510 — Video Conferenching — Teams/Webex/Zoom — Foregrounders",
+  "rules": [
+
+    {
+      "description": "#0511.b — Webex — Systemwide — Foreground (Shift-Ctrl-Cmd-W)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+                "left_shift",
+                "left_control",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"Webex Meetings\" to reopen' -e 'tell application \"Webex Meetings\" to activate'"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0511.c — Microsoft Teams — Foreground (Shift-Ctrl-Cmd-T)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "left_shift",
+                "left_control",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"Microsoft Teams\" to reopen' -e 'tell application \"Microsoft Teams\" to activate'"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+
+  ]
+}
+

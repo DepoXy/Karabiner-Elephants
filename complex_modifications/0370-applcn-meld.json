@@ -1,0 +1,259 @@
+{
+  "title": "#0370 — Meld — Remap Commands (b/c System Prefs Keyb Shortcuts fails)",
+  "rules": [
+
+    {
+      "description": "#0371 — Meld — Remap Meld > Quit Meld: Control-Q → Command-Q",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "q",
+            "modifiers": { "mandatory": [ "left_control" ] }
+          },
+          "to": {
+            "key_code": "q",
+            "modifiers": [ "left_command" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_if",
+            "bundle_identifiers": [ "^org\\.gnome\\.meld" ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0372 — Meld — Remap File > New Comparison...: Control-N → Command-N",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "n",
+            "modifiers": { "mandatory": [ "left_control" ] }
+          },
+          "to": {
+            "key_code": "n",
+            "modifiers": [ "left_command" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_if",
+            "bundle_identifiers": [ "^org\\.gnome\\.meld" ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0373 — Meld — Remap File > Save: Control-S → Command-S",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "s",
+            "modifiers": { "mandatory": [ "left_control" ] }
+          },
+          "to": {
+            "key_code": "s",
+            "modifiers": [ "left_command" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_if",
+            "bundle_identifiers": [ "^org\\.gnome\\.meld" ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0374 — Meld — Remap File > Save As...: Control-S → Command-S",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "s",
+            "modifiers": { "mandatory": [ "left_control", "left_shift" ] }
+          },
+          "to": {
+            "key_code": "s",
+            "modifiers": [ "left_command", "left_shift" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_if",
+            "bundle_identifiers": [ "^org\\.gnome\\.meld" ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0375 — Meld — Remap File > Close: Control-W → Command-W",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "w",
+            "modifiers": { "mandatory": [ "left_control" ] }
+          },
+          "to": {
+            "key_code": "w",
+            "modifiers": [ "left_command" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_if",
+            "bundle_identifiers": [ "^org\\.gnome\\.meld" ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0376 — Meld — Remap Edit > Undo: Control-Z → Command-Z",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "z",
+            "modifiers": { "mandatory": [ "left_control" ] }
+          },
+          "to": {
+            "key_code": "z",
+            "modifiers": [ "left_command" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_if",
+            "bundle_identifiers": [ "^org\\.gnome\\.meld" ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0378 — Meld — Remap Edit > Redo: Shift-Control-Z → Shift-Command-Z",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "z",
+            "modifiers": { "mandatory": [ "left_control", "left_shift" ] }
+          },
+          "to": {
+            "key_code": "z",
+            "modifiers": [ "left_command", "left_shift" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_if",
+            "bundle_identifiers": [ "^org\\.gnome\\.meld" ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0379 — Meld — Remap Edit > Find...: Control-F → Command-F",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "f",
+            "modifiers": { "mandatory": [ "left_control" ] }
+          },
+          "to": {
+            "key_code": "f",
+            "modifiers": [ "left_command" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_if",
+            "bundle_identifiers": [ "^org\\.gnome\\.meld" ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0380 — Meld — Remap Edit > Find Next: Control-G → Command-G",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "g",
+            "modifiers": { "mandatory": [ "left_control" ] }
+          },
+          "to": {
+            "key_code": "g",
+            "modifiers": [ "left_command" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_if",
+            "bundle_identifiers": [ "^org\\.gnome\\.meld" ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0381 — Meld — Remap Edit > Find Previous: Shift-Control-G → Shift-Command-G",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "g",
+            "modifiers": { "mandatory": [ "left_control", "left_shift" ] }
+          },
+          "to": {
+            "key_code": "g",
+            "modifiers": [ "left_command", "left_shift" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_if",
+            "bundle_identifiers": [ "^org\\.gnome\\.meld" ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0382 — Meld — Remap Edit > Go to Line: Control-I → Command-I",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "i",
+            "modifiers": { "mandatory": [ "left_control" ] }
+          },
+          "to": {
+            "key_code": "i",
+            "modifiers": [ "left_command" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_if",
+            "bundle_identifiers": [ "^org\\.gnome\\.meld" ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0383 — Meld — Remap View > Refresh: Control-R → Command-R",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "r",
+            "modifiers": { "mandatory": [ "left_control" ] }
+          },
+          "to": {
+            "key_code": "r",
+            "modifiers": [ "left_command" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_if",
+            "bundle_identifiers": [ "^org\\.gnome\\.meld" ]
+          }],
+          "type": "basic"
+        }
+      ]
+    }
+
+  ]
+}
+

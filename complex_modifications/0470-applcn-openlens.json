@@ -1,0 +1,31 @@
+{
+  "title": "#0470 — OpenLens (com.electron.open-lens) — Foregrounder",
+  "rules": [
+
+    {
+      "description": "#0471 — OpenLens — Systemwide — Foreground (Shift-Ctrl-Cmd-Q)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "q",
+            "modifiers": {
+              "mandatory": [
+                "left_shift",
+                "left_control",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"OpenLens\" to reopen' -e 'tell application \"OpenLens\" to activate'"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+
+  ]
+}
+

@@ -1,0 +1,74 @@
+{
+  "title": "#0330 — iTerm2 — Global Hotkeys: Open New Window and Application Foregrounder",
+  "rules": [
+
+    {
+      "description": "#0331 — iTerm2 — New Window (Cmd-m)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "m",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell app \"iTerm2\"' -e 'create window with default profile' -e activate -e end tell"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0332 — iTerm2 — Foreground (Shift-Cmd-M)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "m",
+            "modifiers": {
+              "mandatory": [
+                "left_command",
+                "left_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"iTerm\" to reopen' -e 'tell application \"iTerm\" to activate'"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0333 — Terminal.app — New Window (Ctrl-Cmd-M)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "m",
+            "modifiers": {
+              "mandatory": [
+                "left_control",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell app \"Terminal\"' -e 'do script \"\"' -e activate -e end tell"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+
+  ]
+}

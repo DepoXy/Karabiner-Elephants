@@ -1,0 +1,55 @@
+{
+  "title": "#0110 — Systemwide — Command↔Option Key Party (Logitech Ergo K860)",
+  "rules": [
+
+    {
+      "description": "#0111 — Systemwide — Swap Keys: Command ↔ Option (Left)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_command",
+            "modifiers": { "optional": [ "any" ] }
+          },
+          "to": {
+            "key_code": "left_option"
+          },
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1133,
+                  "product_id": 50475
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_option",
+            "modifiers": { "optional": [ "any" ] }
+          },
+          "to": {
+            "key_code": "left_command"
+          },
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1133,
+                  "product_id": 50475
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+
+  ]
+}
+

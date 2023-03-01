@@ -1,0 +1,157 @@
+{
+  "title": "#0130 — Systemwide — Right-Option to Left-Control (Logitech Ergo K860)",
+  "rules": [
+
+    {
+      "description": "#0131 — Syswide — Ergo K480 — Forward Keys: Up/Down-RightOption (b/c cannot remap modifiers alone?!)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": { "mandatory": [ "right_option" ] }
+          },
+          "to": {
+            "key_code": "up_arrow",
+            "modifiers": [ "left_control" ]
+          },
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1133,
+                  "product_id": 50475
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": { "mandatory": [ "right_option" ] }
+          },
+          "to": {
+            "key_code": "down_arrow",
+            "modifiers": [ "left_control" ]
+          },
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1133,
+                  "product_id": 50475
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "description": "#0132 — Syswide — Ergo K480 — Forward Keys: Home/End-RightOption (mostly for Vim)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "home",
+            "modifiers": { "mandatory": [ "right_option" ] }
+          },
+          "to": {
+            "key_code": "home",
+            "modifiers": [ "left_control" ]
+          },
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1133,
+                  "product_id": 50475
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "end",
+            "modifiers": { "mandatory": [ "right_option" ] }
+          },
+          "to": {
+            "key_code": "end",
+            "modifiers": [ "left_control" ]
+          },
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1133,
+                  "product_id": 50475
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "description": "#0133 — Syswide — Ergo K480 — Forward Keys: PageUp/PageDown-RightOption (mostly for Vim)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "page_up",
+            "modifiers": { "mandatory": [ "right_option" ] }
+          },
+          "to": {
+            "key_code": "page_up",
+            "modifiers": [ "left_control" ]
+          },
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1133,
+                  "product_id": 50475
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "page_down",
+            "modifiers": { "mandatory": [ "right_option" ] }
+          },
+          "to": {
+            "key_code": "page_down",
+            "modifiers": [ "left_control" ]
+          },
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1133,
+                  "product_id": 50475
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+
+  ]
+}
+

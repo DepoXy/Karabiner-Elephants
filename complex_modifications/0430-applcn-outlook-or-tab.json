@@ -1,0 +1,31 @@
+{
+  "title": "#0430 — Microsoft — Global Hotkeys: Application Foregrounders",
+  "rules": [
+
+    {
+      "description": "#0431.b — Microsoft Outlook — Foreground (Shift-Ctrl-Cmd-A)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": [
+                "left_shift",
+                "left_control",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"Microsoft Outlook\" to reopen' -e 'tell application \"Microsoft Outlook\" to activate'"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+
+  ]
+}
+

@@ -1,0 +1,193 @@
+{
+  "title": "#0150 — Systemwide — Remap Edit Commands to Ctrl-key Combos",
+  "rules": [
+
+    {
+      "description": "#0151 — Systemwide — Remap Cut: Control-X → Command-X",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "x",
+            "modifiers": { "mandatory": [ "left_control" ] }
+          },
+          "to": {
+            "key_code": "x",
+            "modifiers": [ "left_command" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_unless",
+            "bundle_identifiers": [
+              "^com\\.googlecode\\.iterm2",
+              "^com\\.apple\\.Terminal"
+            ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "#0152 — Systemwide — Remap Copy: Control-C → Command-C",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "c",
+            "modifiers": { "mandatory": [ "left_control" ] }
+          },
+          "to": {
+            "key_code": "c",
+            "modifiers": [ "left_command" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_unless",
+            "bundle_identifiers": [
+              "^com\\.googlecode\\.iterm2",
+              "^com\\.apple\\.Terminal"
+            ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "#0153 — Systemwide — Remap Paste: Control-V → Command-V",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "v",
+            "modifiers": { "mandatory": [ "left_control" ] }
+          },
+          "to": {
+            "key_code": "v",
+            "modifiers": [ "left_command" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_unless",
+            "bundle_identifiers": [
+              "^com\\.googlecode\\.iterm2",
+              "^com\\.apple\\.Terminal"
+            ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "#0154 — Systemwide — Remap Select All: Control-A → Command-A",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "a",
+            "modifiers": { "mandatory": [ "left_control" ] }
+          },
+          "to": {
+            "key_code": "a",
+            "modifiers": [ "left_command" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_unless",
+            "bundle_identifiers": [
+              "^com\\.googlecode\\.iterm2",
+              "^com\\.apple\\.Terminal"
+            ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0155 — Systemwide — Remap Cut: Control-X ← Command-X",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "x",
+            "modifiers": { "mandatory": [ "left_command" ] }
+          },
+          "to": {
+            "key_code": "x",
+            "modifiers": [ "left_control" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_unless",
+            "bundle_identifiers": [
+              "^com\\.googlecode\\.iterm2",
+              "^com\\.apple\\.Terminal"
+            ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "#0156 — Systemwide — Remap Copy: Control-C ← Command-C",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "c",
+            "modifiers": { "mandatory": [ "left_command" ] }
+          },
+          "to": {
+            "key_code": "c",
+            "modifiers": [ "left_control" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_unless",
+            "bundle_identifiers": [
+              "^com\\.googlecode\\.iterm2",
+              "^com\\.apple\\.Terminal"
+            ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "#0157 — Systemwide — Remap Paste: Control-V ← Command-V",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "v",
+            "modifiers": { "mandatory": [ "left_command" ] }
+          },
+          "to": {
+            "key_code": "v",
+            "modifiers": [ "left_control" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_unless",
+            "bundle_identifiers": [
+              "^com\\.googlecode\\.iterm2",
+              "^com\\.apple\\.Terminal"
+            ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "#0158 — Systemwide — Remap Select All: Control-A ← Command-A",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "a",
+            "modifiers": { "mandatory": [ "left_command" ] }
+          },
+          "to": {
+            "key_code": "a",
+            "modifiers": [ "left_control" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_unless",
+            "bundle_identifiers": [
+              "^com\\.googlecode\\.iterm2",
+              "^com\\.apple\\.Terminal"
+            ]
+          }],
+          "type": "basic"
+        }
+      ]
+    }
+
+  ]
+}
+

@@ -1,0 +1,238 @@
+{
+  "title": "#0390 — Gimp — Remap Commands (b/c setting System Prefs Keyb Shortcuts does nothing!)",
+  "rules": [
+
+    {
+      "description": "#0391 — Gimp — Remap GIMP-2.10 > Quit GIMP-2.10: Control-Q → Command-Q",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "q",
+            "modifiers": { "mandatory": [ "left_control" ] }
+          },
+          "to": {
+            "key_code": "q",
+            "modifiers": [ "left_command" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_if",
+            "bundle_identifiers": [ "^org\\.gimp\\.gimp-2.10" ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0392 — Gimp — Remap File > New...: Control-N → Command-N",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "n",
+            "modifiers": { "mandatory": [ "left_control" ] }
+          },
+          "to": {
+            "key_code": "n",
+            "modifiers": [ "left_command" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_if",
+            "bundle_identifiers": [ "^org\\.gimp\\.gimp-2.10" ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0393 — Gimp — Remap File > Create > From Clipboard (aka Edit > Paste as > New Image): Shift-Control-V → Shift-Command-V",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "v",
+            "modifiers": { "mandatory": [ "left_control", "left_shift" ] }
+          },
+          "to": {
+            "key_code": "v",
+            "modifiers": [ "left_command", "left_shift" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_if",
+            "bundle_identifiers": [ "^org\\.gimp\\.gimp-2.10" ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0394 — Gimp — Remap File > Open...: Control-O → Command-O",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "o",
+            "modifiers": { "mandatory": [ "left_control" ] }
+          },
+          "to": {
+            "key_code": "o",
+            "modifiers": [ "left_command" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_if",
+            "bundle_identifiers": [ "^org\\.gimp\\.gimp-2.10" ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0395 — Gimp — Remap File > Open as Layers...: Shift-Control-O → Shift-Command-O",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "o",
+            "modifiers": { "mandatory": [ "left_control", "left_shift" ] }
+          },
+          "to": {
+            "key_code": "o",
+            "modifiers": [ "left_command", "left_shift" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_if",
+            "bundle_identifiers": [ "^org\\.gimp\\.gimp-2.10" ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0396 — Gimp — Remap File > Save...: Control-S → Command-S",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "s",
+            "modifiers": { "mandatory": [ "left_control" ] }
+          },
+          "to": {
+            "key_code": "s",
+            "modifiers": [ "left_command" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_if",
+            "bundle_identifiers": [ "^org\\.gimp\\.gimp-2.10" ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0397 — Gimp — Remap File > Save As...: Shift-Control-S → Shift-Command-S",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "s",
+            "modifiers": { "mandatory": [ "left_control", "left_shift" ] }
+          },
+          "to": {
+            "key_code": "s",
+            "modifiers": [ "left_command", "left_shift" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_if",
+            "bundle_identifiers": [ "^org\\.gimp\\.gimp-2.10" ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0398 — Gimp — Remap File > Export...: Control-E → Command-E",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "e",
+            "modifiers": { "mandatory": [ "left_control" ] }
+          },
+          "to": {
+            "key_code": "e",
+            "modifiers": [ "left_command" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_if",
+            "bundle_identifiers": [ "^org\\.gimp\\.gimp-2.10" ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0399 — Gimp — Remap File > Export As...: Shift-Control-E → Shift-Command-E",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "e",
+            "modifiers": { "mandatory": [ "left_control", "left_shift" ] }
+          },
+          "to": {
+            "key_code": "e",
+            "modifiers": [ "left_command", "left_shift" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_if",
+            "bundle_identifiers": [ "^org\\.gimp\\.gimp-2.10" ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0400 — Gimp — Remap File > Close View: Control-W → Command-W",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "w",
+            "modifiers": { "mandatory": [ "left_control" ] }
+          },
+          "to": {
+            "key_code": "w",
+            "modifiers": [ "left_command" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_if",
+            "bundle_identifiers": [ "^org\\.gimp\\.gimp-2.10" ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0401 — Gimp — Remap File > Close All: Shift-Control-W → Shift-Command-W",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "w",
+            "modifiers": { "mandatory": [ "left_control", "left_shift" ] }
+          },
+          "to": {
+            "key_code": "w",
+            "modifiers": [ "left_command", "left_shift" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_if",
+            "bundle_identifiers": [ "^org\\.gimp\\.gimp-2.10" ]
+          }],
+          "type": "basic"
+        }
+      ]
+    }
+
+  ]
+}
+

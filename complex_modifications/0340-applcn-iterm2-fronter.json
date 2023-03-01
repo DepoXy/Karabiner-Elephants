@@ -1,0 +1,204 @@
+{
+  "title": "#0340 — iTerm2 — Window #1-4 Foregrounders",
+  "rules": [
+
+    {
+      "description": "#0341 — iTerm2 — Foreground Window Numbered “1.” (Cmd-1)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "1",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"iTerm2\"' -e 'repeat with w in windows' -e 'tell w' -e 'if NAME of w starts with \"1. \" then' -e 'set index to 1' -e 'tell application \"System Events\" to tell process \"iTerm2\"' -e 'perform action \"AXRaise\" of window 1' -e 'set frontmost to true' -e 'end tell' -e 'return' -e 'end if' -e 'end tell' -e 'end repeat' -e 'end tell'"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0342 — iTerm2 — Foreground Window Numbered “2.” (Cmd-2)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "2",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"iTerm2\"' -e 'repeat with w in windows' -e 'tell w' -e 'if NAME of w starts with \"2. \" then' -e 'set index to 1' -e 'tell application \"System Events\" to tell process \"iTerm2\"' -e 'perform action \"AXRaise\" of window 1' -e 'set frontmost to true' -e 'end tell' -e 'return' -e 'end if' -e 'end tell' -e 'end repeat' -e 'end tell'"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0343 — iTerm2 — Foreground Window Numbered “3.” (Cmd-3)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "3",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"iTerm2\"' -e 'repeat with w in windows' -e 'tell w' -e 'if NAME of w starts with \"3. \" then' -e 'set index to 1' -e 'tell application \"System Events\" to tell process \"iTerm2\"' -e 'perform action \"AXRaise\" of window 1' -e 'set frontmost to true' -e 'end tell' -e 'return' -e 'end if' -e 'end tell' -e 'end repeat' -e 'end tell'"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0344 — iTerm2 — Foreground Window Numbered “4.” (Cmd-4)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "4",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"iTerm2\"' -e 'repeat with w in windows' -e 'tell w' -e 'if NAME of w starts with \"4. \" then' -e 'set index to 1' -e 'tell application \"System Events\" to tell process \"iTerm2\"' -e 'perform action \"AXRaise\" of window 1' -e 'set frontmost to true' -e 'end tell' -e 'return' -e 'end if' -e 'end tell' -e 'end repeat' -e 'end tell'"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0345 — iTerm2 — Foreground Window Numbered “5.” (Cmd-5)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "5",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"iTerm2\"' -e 'repeat with w in windows' -e 'tell w' -e 'if NAME of w starts with \"5. \" then' -e 'set index to 1' -e 'tell application \"System Events\" to tell process \"iTerm2\"' -e 'perform action \"AXRaise\" of window 1' -e 'set frontmost to true' -e 'end tell' -e 'return' -e 'end if' -e 'end tell' -e 'end repeat' -e 'end tell'"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0346 — iTerm2 — Foreground Window Numbered “6.” (Cmd-6)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "6",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"iTerm2\"' -e 'repeat with w in windows' -e 'tell w' -e 'if NAME of w starts with \"6. \" then' -e 'set index to 1' -e 'tell application \"System Events\" to tell process \"iTerm2\"' -e 'perform action \"AXRaise\" of window 1' -e 'set frontmost to true' -e 'end tell' -e 'return' -e 'end if' -e 'end tell' -e 'end repeat' -e 'end tell'"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0347 — iTerm2 — Foreground Window Numbered “7.” (Cmd-7)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "7",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"iTerm2\"' -e 'repeat with w in windows' -e 'tell w' -e 'if NAME of w starts with \"7. \" then' -e 'set index to 1' -e 'tell application \"System Events\" to tell process \"iTerm2\"' -e 'perform action \"AXRaise\" of window 1' -e 'set frontmost to true' -e 'end tell' -e 'return' -e 'end if' -e 'end tell' -e 'end repeat' -e 'end tell'"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0348 — iTerm2 — Foreground Window Numbered “8.” (Cmd-8)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "8",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"iTerm2\"' -e 'repeat with w in windows' -e 'tell w' -e 'if NAME of w starts with \"8. \" then' -e 'set index to 1' -e 'tell application \"System Events\" to tell process \"iTerm2\"' -e 'perform action \"AXRaise\" of window 1' -e 'set frontmost to true' -e 'end tell' -e 'return' -e 'end if' -e 'end tell' -e 'end repeat' -e 'end tell'"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0349 — iTerm2 — Foreground Window Numbered “9.” (Cmd-9)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "9",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"iTerm2\"' -e 'repeat with w in windows' -e 'tell w' -e 'if NAME of w starts with \"9. \" then' -e 'set index to 1' -e 'tell application \"System Events\" to tell process \"iTerm2\"' -e 'perform action \"AXRaise\" of window 1' -e 'set frontmost to true' -e 'end tell' -e 'return' -e 'end if' -e 'end tell' -e 'end repeat' -e 'end tell'"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+
+  ]
+}

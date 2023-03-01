@@ -1,0 +1,28 @@
+{
+  "title": "#0350 — MacVim — Global Hotkey: Application Foregrounder",
+  "rules": [
+
+    {
+      "description": "#0351 — MacVim — Foreground (Cmd-`)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "grave_accent_and_tilde",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"MacVim\" to reopen' -e 'tell application \"MacVim\" to activate'"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+
+  ]
+}
