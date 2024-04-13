@@ -373,7 +373,7 @@ Parade of Karabiner-Elements Modifications
 
   - Specifically, see the defaults script:
 
-    https://github.com/DepoXy/macOS-onboarder/blob/release/slather-defaults.sh
+    https://github.com/DepoXy/macOS-onboarder/blob/release/bin/slather-defaults.sh
 
   This project is part of the DepoXy Development Environment Orchestrator
 
