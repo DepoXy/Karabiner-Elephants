@@ -1,0 +1,105 @@
+{
+  "title": "#0550 — LibreOffice — Wire Undo/Redo Command Bindings (Swap Cmd-key and Ctrl-key Combos)",
+  "rules": [
+
+    {
+      "description": "#0551 — LibreOffice — Remap Undo: Control-Z → Command-Z",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "z",
+            "modifiers": { "mandatory": [ "left_control" ] }
+          },
+          "to": {
+            "key_code": "z",
+            "modifiers": [ "left_command" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_if",
+            "bundle_identifiers": [
+              "^org\\.libreoffice\\.script",
+              "^org\\.openoffice\\.spreadsheet",
+              "^org\\.oasis-open\\.opendocument\\.spreadsheet"
+            ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "#0552 — LibreOffice — Remap Undo: Control-Z ← Command-Z",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "z",
+            "modifiers": { "mandatory": [ "left_command" ] }
+          },
+          "to": {
+            "key_code": "z",
+            "modifiers": [ "left_control" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_if",
+            "bundle_identifiers": [
+              "^org\\.libreoffice\\.script",
+              "^org\\.openoffice\\.spreadsheet",
+              "^org\\.oasis-open\\.opendocument\\.spreadsheet"
+            ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0553 — LibreOffice — Remap Undo: Control-Y → Command-Y",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "y",
+            "modifiers": { "mandatory": [ "left_control" ] }
+          },
+          "to": {
+            "key_code": "y",
+            "modifiers": [ "left_command" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_if",
+            "bundle_identifiers": [
+              "^org\\.libreoffice\\.script",
+              "^org\\.openoffice\\.spreadsheet",
+              "^org\\.oasis-open\\.opendocument\\.spreadsheet"
+            ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "#0554 — LibreOffice — Remap Undo: Control-Y ← Command-Y",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "y",
+            "modifiers": { "mandatory": [ "left_command" ] }
+          },
+          "to": {
+            "key_code": "y",
+            "modifiers": [ "left_control" ]
+          },
+          "conditions": [{
+            "type": "frontmost_application_if",
+            "bundle_identifiers": [
+              "^org\\.libreoffice\\.script",
+              "^org\\.openoffice\\.spreadsheet",
+              "^org\\.oasis-open\\.opendocument\\.spreadsheet"
+            ]
+          }],
+          "type": "basic"
+        }
+      ]
+    }
+
+  ]
+}
+
