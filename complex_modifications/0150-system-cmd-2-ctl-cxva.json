@@ -18,7 +18,8 @@
             "type": "frontmost_application_unless",
             "bundle_identifiers": [
               "^com\\.googlecode\\.iterm2",
-              "^com\\.apple\\.Terminal"
+              "^com\\.apple\\.Terminal",
+              "^org\\.alacritty"
             ]
           }],
           "type": "basic"
@@ -41,7 +42,8 @@
             "type": "frontmost_application_unless",
             "bundle_identifiers": [
               "^com\\.googlecode\\.iterm2",
-              "^com\\.apple\\.Terminal"
+              "^com\\.apple\\.Terminal",
+              "^org\\.alacritty"
             ]
           }],
           "type": "basic"
@@ -64,7 +66,8 @@
             "type": "frontmost_application_unless",
             "bundle_identifiers": [
               "^com\\.googlecode\\.iterm2",
-              "^com\\.apple\\.Terminal"
+              "^com\\.apple\\.Terminal",
+              "^org\\.alacritty"
             ]
           }],
           "type": "basic"
@@ -87,7 +90,8 @@
             "type": "frontmost_application_unless",
             "bundle_identifiers": [
               "^com\\.googlecode\\.iterm2",
-              "^com\\.apple\\.Terminal"
+              "^com\\.apple\\.Terminal",
+              "^org\\.alacritty"
             ]
           }],
           "type": "basic"
@@ -111,7 +115,8 @@
             "type": "frontmost_application_unless",
             "bundle_identifiers": [
               "^com\\.googlecode\\.iterm2",
-              "^com\\.apple\\.Terminal"
+              "^com\\.apple\\.Terminal",
+              "^org\\.alacritty"
             ]
           }],
           "type": "basic"
@@ -134,7 +139,8 @@
             "type": "frontmost_application_unless",
             "bundle_identifiers": [
               "^com\\.googlecode\\.iterm2",
-              "^com\\.apple\\.Terminal"
+              "^com\\.apple\\.Terminal",
+              "^org\\.alacritty"
             ]
           }],
           "type": "basic"
@@ -157,7 +163,8 @@
             "type": "frontmost_application_unless",
             "bundle_identifiers": [
               "^com\\.googlecode\\.iterm2",
-              "^com\\.apple\\.Terminal"
+              "^com\\.apple\\.Terminal",
+              "^org\\.alacritty"
             ]
           }],
           "type": "basic"
@@ -180,7 +187,8 @@
             "type": "frontmost_application_unless",
             "bundle_identifiers": [
               "^com\\.googlecode\\.iterm2",
-              "^com\\.apple\\.Terminal"
+              "^com\\.apple\\.Terminal",
+              "^org\\.alacritty"
             ]
           }],
           "type": "basic"
