@@ -8,8 +8,14 @@ Parade of Karabiner-Elements Modifications
   (using [complex_modifications](https://karabiner-elements.pqrs.org/docs/json/complex-modifications-manipulator-definition/) JSON)
   that'll make your Mac feel like Linux.
 
-  Also other bindings, like systemwide commands to bring specific
-  applications to the foreground.
+  Basically, it swaps `Ctrl-` and `Cmd-` key combos for
+  the whole system, and for specific apps.
+
+  For less complex bindings that simply call an app
+  (e.g., to open a new browser window), check out
+  [skhd](https://github.com/koekeishiya/skhd)
+  and our related config project,
+  [`macOS-skhibidirc`](https://github.com/DepoXy/macOS-skhibidirc)
 
 ## USAGE
 
@@ -39,64 +45,9 @@ Parade of Karabiner-Elements Modifications
 
   - Also many of the Cmd-key bindings are rebound to Ctrl-key.
 
-  You'll also find a number of bindings to front specific apps
-  by using a global binding.
-
-  - E.g., &lt;`Cmd-a`&gt; brings forward the email application (which
-    could be the Outlook app, or Outlook in a Chrome browser tab).
-
-    - In this example, note that &lt;`Cmd-a>`&gt; is not Select All.
-      Select All is remapped to &lt;`Ctrl-a>`&gt;, because Linux.
-
-  There are also additional bindings for other interesting effects.
+  There may also be additional bindings for other interesting effects.
 
 ## JSON FILES
-
-### Systemwide Modifier Key Swaps
-
-  - [0110-system-swap-mods-ergo.json](complex_modifications/0110-system-swap-mods-ergo.json)
-
-    Contains one rule for Logitech Ergo K860 keyboards that
-    swaps the left Command and left Option keys.
-
-    - *#0111 — Systemwide — Swap Keys: Command ↔ Option (Left)*
-
-      - Systemwide: Swaps &lt;`Left-Command`&gt; and &lt;`Left-Option`&gt;
-
-    This rule could be updated to support additional keyboards (although
-    many keyboards nowadays have programmable firmware that let you make
-    this same modification).
-
-  - [0130-system-alt-r-to-ctl-l.json](complex_modifications/0130-system-alt-r-to-ctl-l.json)
-
-    Six rules to remap &lt;`Right-Option`&gt; to &lt;`Left-Control`&gt;
-    when using Up, Down, Page Up, Page Down, Home and End motions.
-
-    These rules are currently restricted to Logitech Ergo K860 keyboards,
-    because many keyboards let you remap this at the firmware level (and
-    if you have both an Ergo K860 and a mechanical keyboard, you might
-      want different KE bindings for each).
-
-    - *#0131 — Syswide — Ergo K480 — Forward Keys: Up/Down-RightOption*
-
-      - Systemwide: Forwards &lt;`Right-Option-Up`&gt; to &lt;`Left-Control-Up`&gt;
-
-      - Systemwide: Forwards &lt;`Right-Option-Down`&gt; to &lt;`Left-Control-Down`&gt;
-
-    - *#0132 — Syswide — Ergo K480 — Forward Keys: Home/End-RightOption*
-
-      - Systemwide: Forwards &lt;`Right-Option-Home`&gt; to &lt;`Left-Control-Home`&gt;
-
-      - Systemwide: Forwards &lt;`Right-Option-End`&gt; to &lt;`Left-Control-End`&gt;
-
-    - *#0133 — Syswide — Ergo K480 — Forward Keys: PageUp/PageDown-RightOption*
-
-      - Systemwide: Forwards &lt;`Right-Option-PageUp`&gt; to &lt;`Left-Control-PageUp`&gt;
-
-      - Systemwide: Forwards &lt;`Right-Option-PageDown`&gt; to &lt;`Left-Control-PageDown`&gt;
-
-    The Control-Home/End/PageUp/PageDown motions are especially useful for
-    right-handed motions in certain text editors.
 
 ### Systemwide Cut/Copy/Paste/Select-All Key Swaps
 
@@ -169,10 +120,6 @@ Parade of Karabiner-Elements Modifications
 
     Chrome-specific bindings.
 
-    - *#0311.t — Google Chrome — New Window (Cmd-t)*
-
-      Systemwide: &lt;`Cmd-t`&gt; opens new Chrome window
-
     - *#0314 — Google Chrome — (Shift-)F5 (Hard) Reload (maps to (Shift-)Ctrl-R)*
 
       Chrome: &lt;`F5`&gt; reloads
@@ -190,53 +137,6 @@ Parade of Karabiner-Elements Modifications
     - *#0317 — Google Chrome — Delete Back-Word like readline (Cmd-w)*
 
       Chrome: &lt;`Cmd-w`&gt; deletes back-word, like `readline`
-
-### iTerm2 bindings (and one for Terminal.app)
-
-  - [0330-applcn-iterm2.json](complex_modifications/0330-applcn-iterm2.json)
-
-    - *#0331 — iTerm2 — New Window (Cmd-m)*
-
-      Systemwide: &lt;`Cmd-m`&gt; opens a new `iTerm2` window (terminal session)
-
-    - *#0332 — iTerm2 — Foreground (Shift-Cmd-M)*
-
-      Systemwide: &lt;`Shift-Cmd-M`&gt; brings the topmost `iTerm2` window to foreground
-
-    - *#0333 — Terminal.app — New Window (Ctrl-Cmd-M)*
-
-      Systemwide: &lt;`Ctrl-Cmd-M`&gt; opens a new `Terminal.app` window (terminal session)
-
-  - [0340-applcn-iterm2-fronter.json](complex_modifications/0340-applcn-iterm2-fronter.json)
-
-    `iTerm2` numbers its windows, and &lt;`Cmd-1`&gt; through &lt;`Cmd-9`&gt;
-    brings the `iTerm2` window with the corresponding number to the foreground.
-
-    - *#0341 — iTerm2 — Foreground Window Numbered “1.” (Cmd-1)*
-
-    - *#0342 — iTerm2 — Foreground Window Numbered “2.” (Cmd-2)*
-
-    - *#0343 — iTerm2 — Foreground Window Numbered “3.” (Cmd-3)*
-
-    - *#0344 — iTerm2 — Foreground Window Numbered “4.” (Cmd-4)*
-
-    - *#0345 — iTerm2 — Foreground Window Numbered “5.” (Cmd-5)*
-
-    - *#0346 — iTerm2 — Foreground Window Numbered “6.” (Cmd-6)*
-
-    - *#0347 — iTerm2 — Foreground Window Numbered “7.” (Cmd-7)*
-
-    - *#0348 — iTerm2 — Foreground Window Numbered “8.” (Cmd-8)*
-
-    - *#0349 — iTerm2 — Foreground Window Numbered “9.” (Cmd-9)*
-
-### MacVim foregrounder
-
-  - [0350-applcn-macvim.json](complex_modifications/0350-applcn-macvim.json)
-
-    - *#0351 — MacVim — Foreground (Cmd-`)*
-
-      Systemwide: &lt;`` Cmd-` ``&gt; brings MacVim to foreground
 
 ### Meld bindings
 
@@ -302,72 +202,38 @@ Parade of Karabiner-Elements Modifications
 
   - [0410-applcn-slack.json](complex_modifications/0410-applcn-slack.json)
 
-    - *#0411 — Slack — Systemwide — Foreground (Shift-Ctrl-Cmd-S)*
-
-      Systemwide: &lt;`Shift-Ctrl-Cmd-S`&gt; brings Slack to foreground
-
-    - *#0412 — Slack — Remap Control → Alt+Click*
-
-      Slack: Forwards &lt;`Ctrl-click`&gt; → &lt;`Alt-click`&gt;
-
-    - *#0413 — Slack — Remap Alt+Click ← Control+Click*
-
-      Slack: Forwards &lt;`Alt-click`&gt; → &lt;`Ctrl-click`&gt;
-      (reverse of previous rule)
-
     - *#0414 — Slack — Delete Back-Word like readline (Cmd-w)*
 
       Slack &lt;`Cmd-w`&gt; deletes back-word, like `readline`
 
-### Outlook bindings
-
-  - [0430-applcn-outlook-or-tab.json](complex_modifications/0430-applcn-outlook-or-tab.json)
-
-    - *#0431.b — Microsoft Outlook — Foreground (Shift-Ctrl-Cmd-A)*
-
-      Systemwide: &lt;`Shift-Ctrl-Cmd-A`&gt; brings Outlook to foreground
-
-### OpenLens foregrounder
-
-  - [0470-applcn-openlens.json](complex_modifications/0470-applcn-openlens.json)
-
-    - *#0471 — OpenLens — Systemwide — Foreground (Shift-Ctrl-Cmd-Q)*
-
-      Systemwide: &lt;`Shift-Ctrl-Cmd-Q`&gt; brings OpenLens to foreground
-
-### DBeaver foregrounder
-
-  - [0490-applcn-dbeaver.json](complex_modifications/0490-applcn-dbeaver.json)
-
-    - *#0491 — DBeaver — Systemwide — Foreground (Shift-Ctrl-Cmd-E)*
-
-      Systemwide: &lt;`Shift-Ctrl-Cmd-E`&gt; brings DBeaver to foreground
-
-### Webex foregrounder
-
-  - [0510-vidapp-webex-teams-zoom.json](complex_modifications/0510-vidapp-webex-teams-zoom.json)
-
-    - *#0511.b — Webex — Systemwide — Foreground (Shift-Ctrl-Cmd-W)*
-
-      Systemwide: &lt;`Shift-Ctrl-Cmd-W`&gt; brings Webex to foreground
-
-    - *#0511.c — Microsoft Teams — Foreground (Shift-Ctrl-Cmd-T)*
-
-      Systemwide: &lt;`Shift-Ctrl-Cmd-T`&gt; brings Teams to foreground
-
-### Postman foregrounder
-
-  - [0530-applcn-postman.json](complex_modifications/0530-applcn-postman.json)
-
-    - *#0531 — Postman — Systemwide — Foreground (Shift-Ctrl-Cmd-P)*
-
-      Systemwide: &lt;`Shift-Ctrl-Cmd-P`&gt; brings Postman to foreground
-
 ## SEE ALSO
 
-  This project complements *macOS-Onboarder*, which remaps application
-  menu items the easy way (using `default write` to configure
-  `NSUserKeyEquivalents` for each app):
+  This project tackles more advanced modifications that simpler, yet
+  easier to config, applications do not support.
+
+  - Consider using [skhd](https://github.com/koekeishiya/skhd) for
+    basic action bindings.
+
+    E.g., if a modification is only `to: [ { shell_command: ... } ]`,
+    then you might find `skhd` easier.
+
+    - `skhd` uses one or more flat config files, starting at
+      `~/.config/skhd/skhdrc`, that, as soon as they change,
+      `skhd` reloads. I.e., no more opening Karabiner
+      Elements, finding the rule, clicking the trash can,
+      then adding the rule back. Also the `skhdrc` config
+      supports comments, unlike Karabiner Elements JSON.
+
+  - See the related
+    [`macOS-skhibidirc`](https://github.com/DepoXy/macOS-skhibidirc)
+    project for lots of (opinionated) `skhdrc` config ideas:
+
+    https://github.com/DepoXy/macOS-skhibidirc#👤
+
+  This project also complements
+  [`macOS-Onboarder`](https://github.com/DepoXy/macOS-onboarder),
+  which remaps application menu items using `defaults write`
+  to configure `NSUserKeyEquivalents` for each app:
 
   https://github.com/DepoXy/macOS-onboarder#🏂
 

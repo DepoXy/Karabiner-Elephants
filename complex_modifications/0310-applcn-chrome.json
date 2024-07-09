@@ -1,51 +1,6 @@
 {
-  "title": "#0310 — Google Chrome — Global Hotkeys, and Wire Ctrl-Click and F5 like Linux",
+  "title": "#0310 — Google Chrome — Wire Ctrl-Click and F5 like Linux",
   "rules": [
-
-    {
-      "description": "#0311.t — Google Chrome — New Window (Cmd-t)",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "t",
-            "modifiers": {
-              "mandatory": [
-                "left_command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -na \"Google Chrome\" --args --new-window"
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-
-    {
-      "description": "#0312 — Google Chrome — Foreground (Shift-Cmd-T)",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "t",
-            "modifiers": {
-              "mandatory": [
-                "left_command",
-                "left_shift"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "osascript -e 'tell application \"Chrome\" to reopen' -e 'tell application \"Chrome\" to activate'"
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
 
     {
       "description": "#0314 — Google Chrome — (Shift-)F5 (Hard) Reload (maps to (Shift-)Ctrl-R)",

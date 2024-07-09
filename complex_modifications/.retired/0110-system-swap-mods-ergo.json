@@ -1,9 +1,9 @@
 {
-  "title": "#0110 — Systemwide — Command↔Option Key Party (Logitech Ergo K860)",
+  "title": "#0110 — Ergo K860 — Systemwide — Command↔Option Key Party (Logitech Ergo K860)",
   "rules": [
 
     {
-      "description": "#0111 — Systemwide — Swap Keys: Command ↔ Option (Left)",
+      "description": "#0111 — Syswide — Ergo K480 — Swap Keys: Command ↔ Option (Left)",
       "manipulators": [
         {
           "type": "basic",

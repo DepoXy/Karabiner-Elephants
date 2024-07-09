@@ -1,0 +1,52 @@
+{
+  "title": "#0310 — Google Chrome — Global Hotkeys",
+  "rules": [
+
+    {
+      "description": "#0311.t — Google Chrome — New Window (Cmd-t)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome --new-window"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+
+    {
+      "description": "#0312 — Google Chrome — Foreground (Shift-Cmd-T)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "left_command",
+                "left_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"Chrome\" to reopen' -e 'tell application \"Chrome\" to activate'"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+
+  ]
+}
+

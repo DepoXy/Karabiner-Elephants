@@ -1,0 +1,29 @@
+{
+  "title": "#0190 — Systemwide — Ctrl+Alt+D Show Desktop aka Minimize all Windows",
+  "rules": [
+
+    {
+      "description": "#0190 — Systemwide — Ctrl+Alt+D Show Desktop aka Minimize all Windows (Ctrl-Alt-D)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "d",
+            "modifiers": {
+              "mandatory": [
+                "left_command",
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'activate application \"Finder\"' -e 'tell application \"System Events\"' -e 'set visible of processes where name is not \"Finder\" to false' -e 'end tell' -e 'tell application \"Finder\" to set collapsed of windows to true'"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+
+  ]
+}
