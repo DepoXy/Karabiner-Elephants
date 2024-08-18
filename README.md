@@ -198,14 +198,6 @@ Parade of Karabiner-Elements Modifications
 
     - *#0401 — Gimp — Remap File > Close All: Shift-Control-W → Shift-Command-W*
 
-### Slack bindings
-
-  - [0410-applcn-slack.json](complex_modifications/0410-applcn-slack.json)
-
-    - *#0414 — Slack — Delete Back-Word like readline (Cmd-w)*
-
-      Slack &lt;`Cmd-w`&gt; deletes back-word, like `readline`
-
 ## SEE ALSO
 
   This project tackles more advanced modifications that simpler, yet

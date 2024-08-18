@@ -84,6 +84,10 @@ Retired Karabiner-Elephants Modifications
 
       Systemwide: &lt;`Shift-Ctrl-Cmd-S`&gt; brings Slack to foreground
 
+    - *#0414 — Slack — Delete Back-Word like readline (Cmd-w)*
+
+      Slack &lt;`Cmd-w`&gt; deletes back-word, like `readline`
+
 ### Outlook bindings
 
   - [0430-applcn-outlook-or-tab.json](complex_modifications/0430-applcn-outlook-or-tab.json)
