@@ -21,7 +21,7 @@ Retired Karabiner-Elephants Modifications
 
 ### Chrome bindings
 
-  - [0310-applcn-chrome.json](complex_modifications/0310-applcn-chrome.json)
+  - [0310-applcn-chrome.json](./0310-applcn-chrome.json)
 
     Chrome-specific bindings.
 
@@ -31,7 +31,7 @@ Retired Karabiner-Elephants Modifications
 
 ### iTerm2 bindings (and one for Terminal.app)
 
-  - [0330-applcn-iterm2.json](complex_modifications/0330-applcn-iterm2.json)
+  - [0330-applcn-iterm2.json](./0330-applcn-iterm2.json)
 
     - *#0331 — iTerm2 — New Window (Cmd-m)*
 
@@ -45,7 +45,7 @@ Retired Karabiner-Elephants Modifications
 
       Systemwide: &lt;`Ctrl-Cmd-M`&gt; opens a new `Terminal.app` window (terminal session)
 
-  - [0340-applcn-iterm2-fronter.json](complex_modifications/0340-applcn-iterm2-fronter.json)
+  - [0340-applcn-iterm2-fronter.json](./0340-applcn-iterm2-fronter.json)
 
     `iTerm2` numbers its windows, and &lt;`Cmd-1`&gt; through &lt;`Cmd-9`&gt;
     brings the `iTerm2` window with the corresponding number to the foreground.
@@ -70,7 +70,7 @@ Retired Karabiner-Elephants Modifications
 
 ### MacVim foregrounder
 
-  - [0350-applcn-macvim.json](complex_modifications/0350-applcn-macvim.json)
+  - [0350-applcn-macvim.json](./0350-applcn-macvim.json)
 
     - *#0351 — MacVim — Foreground (Cmd-`)*
 
@@ -78,7 +78,7 @@ Retired Karabiner-Elephants Modifications
 
 ### Slack bindings
 
-  - [0410-applcn-slack.json](complex_modifications/0410-applcn-slack.json)
+  - [0410-applcn-slack.json](./0410-applcn-slack.json)
 
     - *#0411 — Slack — Systemwide — Foreground (Shift-Ctrl-Cmd-S)*
 
@@ -90,7 +90,7 @@ Retired Karabiner-Elephants Modifications
 
 ### Outlook bindings
 
-  - [0430-applcn-outlook-or-tab.json](complex_modifications/0430-applcn-outlook-or-tab.json)
+  - [0430-applcn-outlook-or-tab.json](./0430-applcn-outlook-or-tab.json)
 
     - *#0431.b — Microsoft Outlook — Foreground (Shift-Ctrl-Cmd-A)*
 
@@ -98,7 +98,7 @@ Retired Karabiner-Elephants Modifications
 
 ### OpenLens foregrounder
 
-  - [0470-applcn-openlens.json](complex_modifications/0470-applcn-openlens.json)
+  - [0470-applcn-openlens.json](./0470-applcn-openlens.json)
 
     - *#0471 — OpenLens — Systemwide — Foreground (Shift-Ctrl-Cmd-Q)*
 
@@ -106,7 +106,7 @@ Retired Karabiner-Elephants Modifications
 
 ### DBeaver foregrounder
 
-  - [0490-applcn-dbeaver.json](complex_modifications/0490-applcn-dbeaver.json)
+  - [0490-applcn-dbeaver.json](./0490-applcn-dbeaver.json)
 
     - *#0491 — DBeaver — Systemwide — Foreground (Shift-Ctrl-Cmd-E)*
 
@@ -114,7 +114,7 @@ Retired Karabiner-Elephants Modifications
 
 ### Webex foregrounder
 
-  - [0510-vidapp-webex-teams-zoom.json](complex_modifications/0510-vidapp-webex-teams-zoom.json)
+  - [0510-vidapp-webex-teams-zoom.json](./0510-vidapp-webex-teams-zoom.json)
 
     - *#0511.b — Webex — Systemwide — Foreground (Shift-Ctrl-Cmd-W)*
 
@@ -126,7 +126,7 @@ Retired Karabiner-Elephants Modifications
 
 ### Postman foregrounder
 
-  - [0530-applcn-postman.json](complex_modifications/0530-applcn-postman.json)
+  - [0530-applcn-postman.json](./0530-applcn-postman.json)
 
     - *#0531 — Postman — Systemwide — Foreground (Shift-Ctrl-Cmd-P)*
 
@@ -138,7 +138,7 @@ Retired Karabiner-Elephants Modifications
   so, which these bindings still work, they're no longer "supported",
   and scarce few people might care about them.
 
-  - [0110-system-swap-mods-ergo.json](complex_modifications/0110-system-swap-mods-ergo.json)
+  - [0110-system-swap-mods-ergo.json](./0110-system-swap-mods-ergo.json)
 
     Contains one rule for Logitech Ergo K860 keyboards that
     swaps the left Command and left Option keys.
@@ -151,7 +151,7 @@ Retired Karabiner-Elephants Modifications
     many keyboards nowadays have programmable firmware that let you make
     this same modification).
 
-  - [0130-system-alt-r-to-ctl-l.json](complex_modifications/0130-system-alt-r-to-ctl-l.json)
+  - [0130-system-alt-r-to-ctl-l.json](./0130-system-alt-r-to-ctl-l.json)
 
     Six rules to remap &lt;`Right-Option`&gt; to &lt;`Left-Control`&gt;
     when using Up, Down, Page Up, Page Down, Home and End motions.
