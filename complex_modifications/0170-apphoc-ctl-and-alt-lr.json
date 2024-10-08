@@ -3,7 +3,7 @@
   "rules": [
 
     {
-      "description": "#0171 — Finder↔/Chrome↔/Teams↔/½Outlook — Remap Control+LeftArrow ↔ Alt+LeftArrow",
+      "description": "#0171 — Finder↔/Chrome↔/Teams↔/½Outlook←/½LibreOffice← — Remap Control+LeftArrow ↔ Alt+LeftArrow",
       "manipulators": [
         {
           "type": "basic",
@@ -24,7 +24,8 @@
                 "^com\\.google\\.Chrome",
                 "^com\\.microsoft\\.teams",
                 "^com\\.microsoft\\.Outlook",
-                "^com\\.tinyspeck\\.slackmacgap"
+                "^com\\.tinyspeck\\.slackmacgap",
+                "^org\\.libreoffice\\.script"
               ]
             }
           ]
@@ -56,7 +57,7 @@
     },
 
     {
-      "description": "#0172 — Finder↔/Chrome↔/Teams↔/½Outlook→ — Remap Control+RightArrow ↔ Alt+RightArrow",
+      "description": "#0172 — Finder↔/Chrome↔/Teams↔/½Outlook→/½LibreOffice→ — Remap Control+RightArrow ↔ Alt+RightArrow",
       "manipulators": [
         {
           "type": "basic",
@@ -77,7 +78,8 @@
                 "^com\\.google\\.Chrome",
                 "^com\\.microsoft\\.teams",
                 "^com\\.microsoft\\.Outlook",
-                "^com\\.tinyspeck\\.slackmacgap"
+                "^com\\.tinyspeck\\.slackmacgap",
+                "^org\\.libreoffice\\.script"
               ]
             }
           ]
@@ -109,7 +111,7 @@
     },
 
     {
-      "description": "#0173 — Outlook — Remap Alt+LeftArrow → Command+LeftArrow",
+      "description": "#0173 — ½Outlook→/½LibreOffice→ — Remap Alt+LeftArrow → Command+LeftArrow",
       "manipulators": [
         {
           "type": "basic",
@@ -126,7 +128,8 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.microsoft\\.Outlook"
+                "^com\\.microsoft\\.Outlook",
+                "^org\\.libreoffice\\.script"
               ]
             }
           ]
@@ -134,7 +137,7 @@
       ]
     },
     {
-      "description": "#0174 — Outlook — Remap Alt+RightArrow → Command+RightArrow",
+      "description": "#0174 — ½Outlook→/½LibreOffice→ — Remap Alt+RightArrow → Command+RightArrow",
       "manipulators": [
         {
           "type": "basic",
@@ -151,7 +154,8 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com\\.microsoft\\.Outlook"
+                "^com\\.microsoft\\.Outlook",
+                "^org\\.libreoffice\\.script"
               ]
             }
           ]
