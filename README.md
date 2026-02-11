@@ -1,6 +1,19 @@
 Parade of Karabiner-Elements Modifications
 ==========================================
 
+## DEPRECATED
+
+  This project has been deprecated in favor of
+  [Hammerspoon](https://www.hammerspoon.org/)
+  and a set of Hammerspoon Spoons to replicate
+  everything (and more) that was previously
+  accomplished using Karabiner-Elements.
+
+  Considering using [Hammerspoon](https://www.hammerspoon.org/)
+  and these Spoons instead of this project:
+
+  <https://github.com/DepoXy/macOS-Hammyspoony#🥄>
+
 ## DESCRIPTION
 
   Keyboard customization config for
