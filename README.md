@@ -223,15 +223,15 @@ Parade of Karabiner-Elements Modifications
     https://github.com/DepoXy/macOS-skhibidirc#👤
 
   This project also complements
-  [`macOS-Onboarder`](https://github.com/DepoXy/macOS-onboarder),
+  [`macOS-GNOME-onboarder`](https://github.com/DepoXy/macOS-GNOME-onboarder),
   which remaps application menu items using `defaults write`
   to configure `NSUserKeyEquivalents` for each app:
 
-  https://github.com/DepoXy/macOS-onboarder#🏂
+  https://github.com/DepoXy/macOS-GNOME-onboarder#🏂
 
   - Specifically, see the defaults script:
 
-    https://github.com/DepoXy/macOS-onboarder/blob/release/bin/slather-defaults.sh
+    https://github.com/DepoXy/macOS-GNOME-onboarder/blob/release/bin/slather-defaults.sh
 
   This project is part of the DepoXy Development Environment Orchestrator
 
